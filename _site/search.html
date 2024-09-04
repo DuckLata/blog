@@ -11,7 +11,7 @@
 
   <title>
     
-      About &middot; Your awesome title
+      Google Search &middot; Cyber Duck
     
   </title>
 
@@ -35,7 +35,7 @@
 </head>
 
 
-  <body class="page">
+  <body class="search">
 
     <div id="sidebar">
   <header>
@@ -47,13 +47,16 @@
   <path d="M20 11H7.83l5.59-5.59L12 4l-8 8 8 8 1.41-1.41L7.83 13H20v-2z"/>
 </svg></span>
         
-        Your awesome title
+        Cyber Duck
       </a>
     </div>
-    <p class="lead">Write an awesome description for your new site here. You can edit this line in _config.yml. It will appear in your document head meta (for Google search results) and in your feed.xml site description.</p>
+    <p class="lead">Welcome to the blog where I try to do cyber things</p>
   </header>
   <nav id="sidebar-nav-links">
   
+    <a class="home-link "
+        href="/">Home</a>
+  
   
 
   
@@ -61,6 +64,19 @@
   
 
 
+  
+    
+  
+
+  
+    
+      <a class="page-link "
+          href="/about.html">About</a>
+    
+  
+
+  
+    
   
 
   
@@ -75,12 +91,16 @@
 
   
 
-  
-
 
   
 
 
+  
+    
+  
+
+  
+    
   
 
   
@@ -91,6 +111,8 @@
     
   
 
+  
+    
   
 
   
@@ -123,7 +145,27 @@
   
 
   
+    <a id="tags-link"
+       class="icon"
+       title="Tags" aria-label="Tags"
+       href="/tags.html">
+      <svg fill="#000000" height="24" viewBox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg">
+    <path d="M0 0h24v24H0z" fill="none"/>
+    <path d="M17.63 5.84C17.27 5.33 16.67 5 16 5L5 5.01C3.9 5.01 3 5.9 3 7v10c0 1.1.9 1.99 2 1.99L16 19c.67 0 1.27-.33 1.63-.84L22 12l-4.37-6.16z"/>
+</svg>
+    </a>
+  
 
+  
+    <a id="search-link"
+       class="icon"
+       title="Search" aria-label="Search"
+       href="/search.html">
+      <svg fill="#000000" height="24" viewBox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg">
+    <path d="M15.5 14h-.79l-.28-.27C15.41 12.59 16 11.11 16 9.5 16 5.91 13.09 3 9.5 3S3 5.91 3 9.5 5.91 16 9.5 16c1.61 0 3.09-.59 4.23-1.57l.27.28v.79l5 4.99L20.49 19l-4.99-5zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5 14 7.01 14 9.5 11.99 14 9.5 14z"/>
+    <path d="M0 0h24v24H0z" fill="none"/>
+</svg>
+    </a>
   
 
   <!-- Optional additional links to insert for icons links -->
@@ -138,28 +180,25 @@
 
     <main class="container">
       <header>
-  
-
-
-  <h1 class="page-title">About</h1>
+  <h1 class="page-title"><label for="search-bar">Google Search</label></h1>
 </header>
 <div class="content">
-  <p>This is the base Jekyll theme. You can find out more info about customizing your Jekyll theme, as well as basic Jekyll usage documentation at <a href="https://jekyllrb.com/">jekyllrb.com</a></p>
+  <form action="https://google.com/search" class="search-form">
+  <div class="search-row">
+    <input id="search-bar" type="search" name="q" />
 
-<p>You can find the source code for Minima at GitHub:
-<a href="https://github.com/jekyll">jekyll</a> /
-<a href="https://github.com/jekyll/minima">minima</a></p>
+    
+    
+    
+    
+    
+    <input name="sitesearch" type="hidden"
+           value="localhost:4000/" />
 
-<p>You can find the source code for Jekyll at GitHub:
-<a href="https://github.com/jekyll">jekyll</a> /
-<a href="https://github.com/jekyll/jekyll">jekyll</a></p>
-
-
+    <input type="submit" value="Search" />
+  </div>
+</form>
 </div>
-
-
-
-
     </main>
 
     <!-- Optional footer content -->
