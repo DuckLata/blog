@@ -45,7 +45,7 @@ GEM
       octokit (~> 4.2)
     jekyll-paginate (1.1.0)
     jekyll-sass-converter (3.0.0)
-      sass-embedded (~> 1.54)
+      #sass-embedded (~> 1.54)
     jekyll-theme-hydeout (4.2.0)
       jekyll (>= 3.6, < 5.0)
       jekyll-feed (~> 0.6)
